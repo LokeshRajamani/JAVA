@@ -1,7 +1,7 @@
 # Ex.No:1(D) USER DEFINED METHOD.
 
 ## AIM:
-To create a Java program print area of rectangle by defining instance method and local variable value as 10,20 .[Class Name is ‘Area’ function name is ‘calculateArea()’ and return type of function is ’void’
+To create a Java program to print area of circle  by defining instance method and local variable.[Class Name is ‘Area’ function name is ‘calculateArea()’  and return type of function is ’void’]
 
 ## ALGORITHM :
 1.	Start the program.
@@ -14,31 +14,41 @@ c)	Calculate the area by multiplying 'length' and 'width' and store the result i
 d)	Print the calculated area using the System.out.println statement
 5.	Define the 'main' method as static
 6.	Inside the 'main' method:
-a)	Create an instance of the 'Area' class called 'rectangle'
-b)	Call the 'calculateArea' method on the 'rectangle' object
+a)	Create an instance of the 'Area' class called 'circle'
+b)	Call the 'calculateArea' method on the 'circle' object
 
 
 
 
 ## PROGRAM:
- ```
-/*
+ 
 Program to implement a User Defined Method using Java
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: Lokesh R
+RegisterNumber:  212222240055
+
 ```
+import java.util.*;
+public class Area {
+        void calculateArea()
+    { 
+        Scanner sc = new Scanner(System.in);
+        
+        double side1=sc.nextDouble();
 
-## Sourcecode.java:
+        double cirarea=3.14*side1*side1;
+        System.out.println("Area of Circle is "+cirarea);
+    }
+    
+    public static void main(String[] args) {
+       Area obj=new Area();
+       obj.calculateArea();
+    }
+}
 
-
-
-
-
-
-
+```
 ## OUTPUT:
 
+![{CEC7CE1C-03F9-4890-A9B1-601D9EA8B257}](https://github.com/user-attachments/assets/72434402-b83d-4c37-894c-3fc2745c9d99)
 
 
 ## RESULT:
